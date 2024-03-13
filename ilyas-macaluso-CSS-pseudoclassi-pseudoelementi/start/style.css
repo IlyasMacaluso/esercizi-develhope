@@ -1,0 +1,32 @@
+
+blockquote {
+	background-color: rgba(0, 0, 0, .12);
+	padding: 8px;
+}
+blockquote::before{
+	content: open-quote;
+}
+blockquote::after{
+	content: close-quote;
+}
+a {
+	color: darkred;
+	text-decoration: none;
+}
+/*visited sopra per non sovrascrivere hover*/
+a:visited{
+	color: rgb(14, 171, 0);
+}
+a:hover{
+	color: rgb(0, 69, 179);
+}
+
+
+.content p:first-child::first-letter{
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
+}
