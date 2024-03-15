@@ -1,0 +1,78 @@
+:root {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    background-color: rgb(255, 246, 235);
+    --card-borders: 1px solid rgb(216, 216, 216);
+    --link-def-color: rgb(51, 95, 255);
+    --link-hov-color: rgb(0, 172, 80);
+    --link-foc-color: rgb(0, 172, 80);
+    --link-active-color: rgb(222, 180, 12);
+
+}
+p {
+    margin: 8px 16px;
+    line-height: 135%;
+}
+.card {
+    box-sizing: content-box;
+    overflow: hidden;
+    width: 50vw;
+    max-width: 400px;
+    min-width: 240px;
+    background-color: rgb(255, 255, 255);
+    border: var(--card-borders);
+    border-radius: 8px;
+}
+.card-img {
+    width: 100%;
+    height: 25vh;
+    max-height: 180px;
+    min-height: 120px;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: var(--card-borders);
+    background-image: url(https://images.pexels.com/photos/20528016/pexels-photo-20528016/free-photo-of-alba-spiaggia-donna-camminando.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.card-body h3 {
+    margin: 8px 16px 0px 16px;
+}
+.card-body h3 + p {
+    margin-top: 0px;
+}
+.card-body {
+    border-bottom: var(--card-borders)
+}
+/* alternativa per la regola sopra:
+.card-img + section {
+    border-bottom: 2px solid var(--border-color);
+} */
+.items > div {
+    border-bottom: var(--card-borders);
+}
+.card footer a {
+    display: inline-block;
+    padding: 8px;
+    margin: 8px;
+}
+.link {
+    color: var(--link-def-color);
+}
+.link:hover {
+    color: var(--link-hov-color);
+}
+.link:focus{
+    color: var(--link-foc-color);
+}
+.link:active{
+    color: var(--link-active-color);
+}
