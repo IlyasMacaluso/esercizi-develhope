@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ilyas'Navbar Exercise</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Ilyas Macaluso" />
+        <meta name="description" content="HTML navbar exercise" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <section class="navlinks">
+                    <p class="logo" href="">Navbar</p>
+                    <a class="link" href="">Home</a>
+                    <a class="link" href="">Link</a>
+
+                    <div class="dropdown-content">
+                        <a class="dropdown-link" href="">
+                            Dropdown
+                            <img src="arrow_drop_down.svg" alt="a dropdown-link arrow" />
+                        </a>
+                        <div class="dropdown-items">
+                            <a class="link" href="">Item 1</a>
+                            <a class="link" href="">Item 2</a>
+                            <a class="link" href="">Item 3</a>
+                        </div>
+                    </div>
+
+                    <a class="link" href="">Disabled</a>
+                </section>
+
+                <form class="search" action="#" method="get">
+                    <input
+                        class="searchbox"
+                        type="text"
+                        id="search"
+                        name="keyword"
+                        placeholder="Search"
+                    />
+                    <button class="button" type="submit">Search</button>
+                </form>
+            </nav>
+        </header>
+    </body>
+</html>
