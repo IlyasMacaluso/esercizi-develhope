@@ -15,11 +15,13 @@
 body {
     margin: 0;
 }
-main {
+/* contenitore di aside e altre presunte sezioni */
+.page-content {
     display: flex;
     justify-content: flex-start;
     height: 100vh;
 }
+/* contenitore principale della sidebar */
 aside {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,8 @@ aside {
     border-radius: 0px 16px 16px 0px;
     border: 1px solid rgb(241, 241, 241);
 }
+
+/* contenitore di logo e link*/
 aside ul {
     padding: 8px;
     margin: 0;
@@ -38,6 +42,14 @@ aside li {
     list-style: none;
     margin-bottom: 8px;
 }
+/* il placeholder del logo */
+.logo {
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    margin-bottom: 12px;
+}
+/* i singoli link */
 aside a {
     display: block;
     padding: 12px;
@@ -47,18 +59,13 @@ aside a {
     text-decoration: none;
     transition:linear 0.3s;
 }
+/* ho aggiunto anche qualche altro effetto in hovering */
 aside a:hover {
     color: #2b2bb2;
-    box-sizing: border-box;
+    border-color: #2b2bb2;
     background-color: rgb(239, 219, 214);
 }
-.logo {
-    border-radius: 8px;
-    padding: 16px;
-    background-color: white;
-    margin-bottom: 12px;
-}
-
+/* contenuto del footer della sidebar (testo e immagine) */
 .aside-f-content {
     display: flex;
     flex-direction: column;
@@ -69,10 +76,10 @@ aside a:hover {
     background-color: white;
     border: 1px solid rgb(241, 241, 241);
 }
-aside footer p {
+.aside-f-content p {
     margin: 8px;
 }
-aside footer img {
+.aside-f-content img {
     width: 48px;
     border-radius: 24px;
 }
