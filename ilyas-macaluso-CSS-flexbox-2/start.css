@@ -1,0 +1,18 @@
+body {
+    display: flex;
+  }
+ 
+  #orange {
+    background-color: #ffc788;
+    flex-grow: 1;
+  }
+  
+  #yellow {
+    background-color: #ffff92;
+    order: -2;
+  }
+  
+  #red {
+    background-color: #ff919c;
+    order: -1;
+  }
