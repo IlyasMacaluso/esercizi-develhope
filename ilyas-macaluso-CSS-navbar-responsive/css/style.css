@@ -129,7 +129,7 @@
         padding: 8px 24px;
         flex-wrap: nowrap;
     }
-    .navlinks {
+    .navlinks .link, .navlinks .dropdown-content{
         display: none;
     }
     .m-nav {
@@ -142,6 +142,6 @@
     }
 
     .search {
-        height: 40px;
+        display: none;
     }
 }
