@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "g-box g-box g-box"
+        "y-box r-box b-box"
+        "o-box o-box b-box";
+}
+#green {
+    grid-area: g-box;
+}
+#yellow {
+    grid-area: y-box;
+}
+#yellow ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#red {
+    grid-area: r-box;
+}
+#red ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#blue {
+    grid-area: b-box;
+}
+#orange {
+    grid-area: o-box;
+}
