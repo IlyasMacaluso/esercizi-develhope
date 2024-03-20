@@ -1,0 +1,11 @@
+:root{
+    --actions-bg: rgb(207, 212, 225);
+    --numbers-bg: rgb(241, 244, 247);
+    --header-bg: rgb(49, 59, 74);
+    --equal-bg: rgb(235, 113, 107);
+    --light-text: white;
+    --dark-text: black;
+    --border-color: rgb(129, 152, 183);
+    font-family: Roboto, 
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

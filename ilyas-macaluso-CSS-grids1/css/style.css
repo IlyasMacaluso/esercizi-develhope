@@ -1,0 +1,89 @@
+@import "root.css";
+body{
+    margin: 24px;
+    font-size: 1.3rem;
+}
+
+/* impostazioni container generali */
+.calculator {
+    height: 60vh;
+    width: 30vw;
+    min-width: 300px;
+    min-height: 350px;
+    content-visibility: auto;
+    padding: 0;
+    border-radius: 12px;
+    border: 3px solid var(--border-color);
+}
+
+/* impostazioni griglia container */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "plus minus cross divide"
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero dot AC equal";
+}
+
+/* row 1 */
+.header {grid-area: header;}
+
+/* row 2 */
+#plus {grid-area: plus;} #minus {grid-area: minus;} #cross {grid-area: cross;} #division {grid-area: divide;}
+
+/* row 3 + equal */
+#seven {grid-area: seven;} #eight {grid-area: eight;} #nine {grid-area: nine;} #equal {grid-area: equal;}
+
+/* row 4 */
+#four {grid-area: four;} #five {grid-area: five;} #six {grid-area: six;} 
+
+/* row 5 */
+#one {grid-area: one;} #two {grid-area: two;} #three {grid-area: three;}
+
+/* row 6 */
+#zero {grid-area: zero;} #dot {grid-area: dot;} #clear {grid-area: AC;} 
+
+
+/* impostazioni comuni contenuti griglia */
+.number, .action, #equal, .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 3px solid var(--border-color);
+    border-right: 3px solid var(--border-color);
+}
+
+/* rimozione bordi doppioni */
+#equal, #division {
+    border-right: none;
+}
+
+
+/* impostazioni aggiuntive header e colori */
+.header{
+    border: none;
+    justify-content: flex-end;
+    padding: 0 16px;
+    font-size: 1.8rem;
+    background-color: var(--header-bg);
+    color: var(--light-text);
+}
+
+.number{
+    background-color: var(--numbers-bg);
+    color: var(--dark-text);
+}
+.action{
+    background-color: var(--actions-bg);
+    color: var(--dark-text);
+}
+#equal{
+    background-color: var(--equal-bg);
+    color: var(--dark-text);
+}
