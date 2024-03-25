@@ -100,7 +100,6 @@ Nota: anche se non necessario ho scelto di utilizzare i selettori in modo tale c
 /* nota: le immagini cambiano per simulare il passaggio dell'immagine a risoluzioni diverse in base alla larghezza del dispositivo */
 @media screen and (max-width: 768px){
     .posts-container {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 35rem;
         padding: 16px;
@@ -114,7 +113,6 @@ Nota: anche se non necessario ho scelto di utilizzare i selettori in modo tale c
 }
 @media screen and (max-width: 375px){
     .posts-container {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 24px;
         padding: 24px;
