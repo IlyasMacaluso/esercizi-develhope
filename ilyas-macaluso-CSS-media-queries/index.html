@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ilyas' media query</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <section class="posts-container">
+            <div class="post">
+                <!-- header del post-->
+                <header>
+                    <!-- elementi raggruppati a sinistra -->
+                    <div class="left-items">
+                        <picture>
+                            <img
+                                src="assets/images/cat-avatar.png"
+                                alt="A white kitten staring at you"
+                            />
+                        </picture>
+                        <div class="info">
+                            <p>Name Surname</p>
+                            <p class="date">25/03/2024</p>
+                        </div>
+                    </div>
+                    <!-- 3 dots menu -->
+                    <picture>
+                        <img src="assets/images/icons/more_horiz.svg" alt="Addictional actions menu">
+                    </picture>
+                </header>
+
+                <!-- immagine principale del post -->
+                <div class="post-img">
+                    <picture>
+                        <!-- facciamo finta che sia la stessa immagine con dimensioni diverse in base alla risoluzione -->
+                        <source
+                            srcset="assets/images/cat-1.jpeg?auto"
+                            media="(min-width: 769px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-2.jpeg"
+                            media="(min-width: 376px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-3.webp"
+                            media="(max-width: 375px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <img src="assets/images/cat-1.jpeg" alt="A white kitten staring at you" />
+                    </picture>
+                </div>
+
+                <!-- pulsanti like a commenta -->
+                <div class="interaction-buttons">
+                    <img src="assets/images/icons/favorite.svg" alt="" />
+                    <img src="assets/images/icons/maps_ugc.svg" alt="" />
+                </div>
+                <!-- descrizione de post -->
+                <div class="description">
+                    <p>
+                        <span>Username: </span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore...
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <!-- header del post-->
+                <header>
+                    <!-- elementi raggruppati a sinistra -->
+                    <div class="left-items">
+                        <picture>
+                            <img
+                                src="assets/images/cat-avatar.png"
+                                alt="A white kitten staring at you"
+                            />
+                        </picture>
+                        <div class="info">
+                            <p>Name Surname</p>
+                            <p class="date">25/03/2024</p>
+                        </div>
+                    </div>
+                    <!-- 3 dots menu -->
+                    <picture>
+                        <img src="assets/images/icons/more_horiz.svg" alt="Addictional actions menu">
+                    </picture>
+                </header>
+
+                <!-- immagine principale del post -->
+                <div class="post-img">
+                    <picture>
+                        <!-- facciamo finta che sia la stessa immagine con dimensioni diverse in base alla risoluzione -->
+                        <source
+                            srcset="assets/images/cat-1.jpeg?auto"
+                            media="(min-width: 769px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-2.jpeg"
+                            media="(min-width: 376px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-3.webp"
+                            media="(max-width: 375px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <img src="assets/images/cat-1.jpeg" alt="A white kitten staring at you" />
+                    </picture>
+                </div>
+
+                <!-- pulsanti like a commenta -->
+                <div class="interaction-buttons">
+                    <img src="assets/images/icons/favorite.svg" alt="" />
+                    <img src="assets/images/icons/maps_ugc.svg" alt="" />
+                </div>
+                <!-- descrizione de post -->
+                <div class="description">
+                    <p>
+                        <span>Username: </span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore...
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <!-- header del post-->
+                <header>
+                    <!-- elementi raggruppati a sinistra -->
+                    <div class="left-items">
+                        <picture>
+                            <img
+                                src="assets/images/cat-avatar.png"
+                                alt="A white kitten staring at you"
+                            />
+                        </picture>
+                        <div class="info">
+                            <p>Name Surname</p>
+                            <p class="date">25/03/2024</p>
+                        </div>
+                    </div>
+                    <!-- 3 dots menu -->
+                    <picture>
+                        <img src="assets/images/icons/more_horiz.svg" alt="Addictional actions menu">
+                    </picture>
+                </header>
+
+                <!-- immagine principale del post -->
+                <div class="post-img">
+                    <picture>
+                        <!-- facciamo finta che sia la stessa immagine con dimensioni diverse in base alla risoluzione -->
+                        <source
+                            srcset="assets/images/cat-1.jpeg?auto"
+                            media="(min-width: 769px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-2.jpeg"
+                            media="(min-width: 376px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-3.webp"
+                            media="(max-width: 375px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <img src="assets/images/cat-1.jpeg" alt="A white kitten staring at you" />
+                    </picture>
+                </div>
+
+                <!-- pulsanti like a commenta -->
+                <div class="interaction-buttons">
+                    <img src="assets/images/icons/favorite.svg" alt="" />
+                    <img src="assets/images/icons/maps_ugc.svg" alt="" />
+                </div>
+                <!-- descrizione de post -->
+                <div class="description">
+                    <p>
+                        <span>Username: </span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore...
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <!-- header del post-->
+                <header>
+                    <!-- elementi raggruppati a sinistra -->
+                    <div class="left-items">
+                        <picture>
+                            <img
+                                src="assets/images/cat-avatar.png"
+                                alt="A white kitten staring at you"
+                            />
+                        </picture>
+                        <div class="info">
+                            <p>Name Surname</p>
+                            <p class="date">25/03/2024</p>
+                        </div>
+                    </div>
+                    <!-- 3 dots menu -->
+                    <picture>
+                        <img src="assets/images/icons/more_horiz.svg" alt="Addictional actions menu">
+                    </picture>
+                </header>
+
+                <!-- immagine principale del post -->
+                <div class="post-img">
+                    <picture>
+                        <!-- facciamo finta che sia la stessa immagine con dimensioni diverse in base alla risoluzione -->
+                        <source
+                            srcset="assets/images/cat-1.jpeg?auto"
+                            media="(min-width: 769px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-2.jpeg"
+                            media="(min-width: 376px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-3.webp"
+                            media="(max-width: 375px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <img src="assets/images/cat-1.jpeg" alt="A white kitten staring at you" />
+                    </picture>
+                </div>
+
+                <!-- pulsanti like a commenta -->
+                <div class="interaction-buttons">
+                    <img src="assets/images/icons/favorite.svg" alt="" />
+                    <img src="assets/images/icons/maps_ugc.svg" alt="" />
+                </div>
+                <!-- descrizione de post -->
+                <div class="description">
+                    <p>
+                        <span>Username: </span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore...
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <!-- header del post-->
+                <header>
+                    <!-- elementi raggruppati a sinistra -->
+                    <div class="left-items">
+                        <picture>
+                            <img
+                                src="assets/images/cat-avatar.png"
+                                alt="A white kitten staring at you"
+                            />
+                        </picture>
+                        <div class="info">
+                            <p>Name Surname</p>
+                            <p class="date">25/03/2024</p>
+                        </div>
+                    </div>
+                    <!-- 3 dots menu -->
+                    <picture>
+                        <img src="assets/images/icons/more_horiz.svg" alt="Addictional actions menu">
+                    </picture>
+                </header>
+
+                <!-- immagine principale del post -->
+                <div class="post-img">
+                    <picture>
+                        <!-- facciamo finta che sia la stessa immagine con dimensioni diverse in base alla risoluzione -->
+                        <source
+                            srcset="assets/images/cat-1.jpeg?auto"
+                            media="(min-width: 769px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-2.jpeg"
+                            media="(min-width: 376px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <source
+                            srcset="assets/images/cat-3.webp"
+                            media="(max-width: 375px)"
+                            alt="A white kitten staring at you"
+                        />
+                        <img src="assets/images/cat-1.jpeg" alt="A white kitten staring at you" />
+                    </picture>
+                </div>
+
+                <!-- pulsanti like a commenta -->
+                <div class="interaction-buttons">
+                    <img src="assets/images/icons/favorite.svg" alt="" />
+                    <img src="assets/images/icons/maps_ugc.svg" alt="" />
+                </div>
+                <!-- descrizione de post -->
+                <div class="description">
+                    <p>
+                        <span>Username: </span> Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore...
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

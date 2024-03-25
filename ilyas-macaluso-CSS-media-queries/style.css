@@ -1,0 +1,122 @@
+:root {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+body {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    max-width: 50rem;
+    padding: 16px;
+}
+.post {
+    height: fit-content;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 12;
+    box-shadow: 0 4px 8px  rgb(123, 123, 123);
+}
+
+/*
+Nota: anche se non necessario ho scelto di utilizzare i selettori in modo tale che chi legge capisca:
+- qual è l'elemento selezionato;
+- dove si trova all'interno della struttura; 
+*/
+
+/* elementi header */
+.post header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 0 8px;
+}
+.post header .left-items {
+    display: flex;
+    align-items: center;
+}
+.post header .left-items picture img {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(206, 206, 206);
+}
+.post header .left-items .info {
+    margin-left: 8px;
+}
+.post header .left-items .info p {
+    font-size: .9rem;
+    margin: 0;
+}
+.post header .left-items .info .date {
+    font-size: 0.8rem;
+    color: gray;
+} 
+
+/* immagine principale del post */
+.post .post-img picture img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* pulsanti interazione del post */
+.post .interaction-buttons {
+    display: flex;
+    gap: 12px;
+    padding: 8px 16px;
+}
+.post .interaction-buttons img {
+    width: 18px;
+}
+
+/* descrizione del post */
+.post .description p{
+    margin:0;
+    padding: 0 12px 8px 12px;
+    font-size: 0.8rem;
+}
+.post .description span {
+    font-weight: 600;
+}
+
+/* nota: le immagini cambiano per simulare il passaggio dell'immagine a risoluzioni diverse in base alla larghezza del dispositivo */
+@media screen and (max-width: 768px){
+    .posts-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 35rem;
+        padding: 16px;
+    }
+    .post header .left-items .info p {
+        font-size: 0.8rem;
+    }
+    .post header .left-items .info .date {
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .posts-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+    }
+}
