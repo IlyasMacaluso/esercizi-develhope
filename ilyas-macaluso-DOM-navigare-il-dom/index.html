@@ -1,21 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <body>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <script>
+            // definizone variabili
+            const html = document.documentElement
 
-<body>
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
-    <script>
-        // ...
-    </script>
-</body>
+            const body = html.children[1]
 
+            const ul = body.children[0]
+
+            const secondLi = ul.children[1]
+
+            // stampo l'elemento padre di ul
+            console.log(ul.parentElement)
+
+            //stampo il secondo elemento figlio di ul
+            console.log(ul.children[1])
+
+            //stampo il fratello successivo e precedente del secondo elemento li
+            console.log(secondLi.nextElementSibling)
+
+            console.log(secondLi.previousElementSibling)
+        </script>
+    </body>
 </html>
