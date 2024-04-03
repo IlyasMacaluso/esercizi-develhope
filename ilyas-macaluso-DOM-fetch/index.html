@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fetch</title>
+        <style>
+            body {
+                margin: 5rem;
+                background-color: rgb(255, 249, 220);
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                max-width: 25rem;
+                border: solid 1px rgb(227, 227, 227);
+                background-color: white;
+                border-radius: 2px;
+                align-items: center;
+                padding: 2rem;
+                box-sizing: border-box;
+                margin: auto;
+                border-radius: 2rem;
+            }
+            main img {
+                width: 100%;
+                border-radius: 2rem;
+                box-sizing: border-box;
+                border: inset 1rem rgba(158, 101, 26, 0.703);
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 140%;
+            }
+            cite {
+                font-size: 1.2rem;
+            }
+            h1 {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="card-title"></h1>
+            <p class="card-flavor"></p>
+            <img class="card-image" src="" alt="" />
+            <script>
+                //eseguo il fetch (questo url restituisce tutte le carte esistenti nel database)
+                async function fetchData() {
+                    try {
+                        const request = await fetch("https://ringsdb.com/api/public/cards/?_format=json")
+                        const data = await request.json()
+                        //assegno a myData le coppie chiave/valore che mi interessano di una carta a scelta
+                        let myData = ({ name, flavor, imagesrc } = data[649])
+                        //la restituisco come risultato della funzione
+                        return myData
+                    } catch (error) {
+                        console.error(error)
+                        alert(error)
+                    }
+                }
+                //seleziono gli elementi HTML a cui assegnare i valori
+                const cardTitle = document.querySelector(".card-title")
+                const cardImage = document.querySelector(".card-image")
+                const cardFlavor = document.querySelector(".card-flavor")
+
+                async function preloadCard() {
+                    try {
+                        //assegno a card il risulatato della funzione fetchData (un oggetto contenente nome, immagine, e flavor text)
+                        const card = await fetchData()
+                        //assegno il titolo
+                        cardTitle.innerText = card.name
+                        //assegno il flavor text (usando innerHTML perchè card.flavor contiene un tag <cite></cite> al suo interno)
+                        cardFlavor.innerHTML = card.flavor
+                        //imposto l'attributo src assegnando come valore: Il dominio + l'indirizzo specifico dell'immagine all'interno di quel dominio
+                        cardImage.setAttribute("src", `https://ringsdb.com/${card.imagesrc}`)
+                    } catch (error) {
+                        console.error(error)
+                    }
+                }
+
+                preloadCard()
+            </script>
+        </main>
+    </body>
+</html>
