@@ -1,0 +1,11 @@
+Welcome to Node.js v21.7.3.
+Type ".help" for more information.
+> crypto.
+crypto.__proto__             crypto.hasOwnProperty        crypto.isPrototypeOf         crypto.propertyIsEnumerable  crypto.toLocaleString
+crypto.toString              crypto.valueOf
+
+crypto.constructor           crypto.getRandomValues       crypto.randomUUID            crypto.subtle
+
+> crypto.randomUUID()
+'950c6ad8-47c5-41fd-9fa7-874b3b17a2db'
+> 
